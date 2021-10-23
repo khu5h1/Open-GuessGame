@@ -38,8 +38,8 @@ function validateMsg(msg) {
   }
 
   //Validating number against the range
-  if (num < 1 || num > 50) {
-    msgEl.innerHTML += "<div> Please speak a Number between 1-50 !</div>";
+  if (num < 1 || num > 30) {
+    msgEl.innerHTML += "<div> Please speak a Number between 1-30 !</div>";
     return;
   }
 
@@ -59,7 +59,7 @@ function validateMsg(msg) {
 
 //getting a random No.
 function getRandomNum() {
-  x = Math.floor(Math.random() * 50) + 1;
+  x = Math.floor(Math.random() * 30) + 1;
   return x;
 }
 
